@@ -5,7 +5,6 @@
     require_once('views/doctype.php');
     //var_dump($cart);
     /* sert à débuger : affiche la ligne, le type de la variable et son contenu et sa taille */
-    
 ?>
     <div id='ticket'>
         <div class='zindex-2'>
