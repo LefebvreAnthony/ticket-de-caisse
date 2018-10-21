@@ -1,0 +1,100 @@
+/* tools */
+body{
+    background-color: #eeeeee; /* couleur de fond */
+    font-family: 'Titillium Web', sans-serif;
+}
+h1, h2, h3, h4, h5{
+    margin: 0;
+}
+.red{
+    color: #e6382a; /*couleur du texte*/
+}
+.tcenter{
+    text-align: center; /* texte centré*/
+}
+.tright{
+    text-align: right;
+}
+.uppercase{
+    text-transform: uppercase; /* Passer en majuscule */
+}
+.ptsans{
+    font-family: 'PT Sans', sans-serif; /* changement de la police */
+}
+.margin-tb{ /* marge exterieur */
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.zindex-2{
+    position: relative;
+    z-index: 2;
+}
+.relative{
+    position: relative;
+}
+.bold{
+    font-weight: bold;
+}
+
+/* page ticket */
+#ticket{
+    position: relative; /* permet de créer un point de référence dans t'as page pour celui qui est en dessous */
+    background-color: #ffffff;
+    width: 50%; /* largeur */
+    margin: auto;
+    max-width: 500px; /* largeur maximum */
+    border: 2px solid #888888;
+    overflow: hidden; /* cacher un débordement ; auto pour avoir des scrollbars */
+}
+#logo{
+    width: 20%;
+    height: auto; /* hauteur */
+    margin: 25px auto 10px; /* top ; droite et gauche ; bottom */
+    display: block; /* changer le type de block */
+}
+#logoFond{
+    position: absolute; /* permet de placer un élément par rapport à l'élément le plus haut ayant une position relative ou absolute ou fixed */
+    bottom: -81px;
+    right: -242px;
+    opacity: 0.5; /* gestiion de la transparence de 0 à 1 */
+    transform: rotate(-45deg); /* applique une rotation à un élément */
+    z-index: 1; /* permet de gérer la supperposition des éléments !!! position exigée !!! */
+    width: 150%;
+}
+.categorieArticle{
+    border-top: 1px solid #888888;
+    border-bottom: 1px solid #888888;
+
+}
+.categorieTitre{
+    background-repeat: no-repeat;
+    background-position: 8px 7px;
+    padding: 7px 50px;
+}
+.categorie-fruits{
+    background-color: #ffdd69;
+    background-image: url(../img/fruits.png);
+}
+.categorie-legumes{
+    background-color: #6eff69;
+    background-image: url(../img/vegetables.png);
+}
+.categorie-viandes{
+    background-color: #ff6969;
+    background-image: url(../img/meat.png);
+}
+.categorie-poissons{
+    background-color: #69e9ff;
+    background-image: url(../img/fish.png);
+}
+.prixArticle{
+    position: absolute;
+    right: 20px;
+    top: 0;
+}
+#ticket footer{
+    margin-top: 200px;
+}
+.categorieArticle li.relative{
+    padding-right: 150px;
+} 
